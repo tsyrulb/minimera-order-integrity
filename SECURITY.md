@@ -1,6 +1,6 @@
 # Security policy
 
-Minimera is a personal hackathon prototype maintained by [Borys Tsyrulnikov](https://github.com/tsyrulb). The latest `main` revision is the supported demonstration version. It is not a production payment service or a compliance certification.
+Minimera is an independent hackathon prototype. The latest `main` revision is the supported demonstration version. It is not a production payment service or a compliance certification.
 
 ## Report privately
 

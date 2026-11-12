@@ -69,4 +69,4 @@ Merchant and warehouse systems are synthetic. This is a prototype without produc
 
 Original source and fixtures use [MIT](LICENSE). [Third-party terms](THIRD_PARTY.md), including AG Studio and bundled font licences, remain applicable. Historical Context Lab experiments and measured failures are retained separately for reproducibility; they are not merchant-accuracy claims for this workflow. [Historical evaluation guide](docs/CONTEXT_LAB.md).
 
-Maintained by [Borys Tsyrulnikov](https://github.com/tsyrulb). For setup problems, open an issue with the failing command and a redacted error. Use the security policy for vulnerability reporting.
+For setup problems, open an issue with the failing command and a redacted error. Use the security policy for vulnerability reporting.

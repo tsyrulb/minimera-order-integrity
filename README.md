@@ -2,7 +2,7 @@
 
 Keep changed PayPal orders consistent with approvals, verified payments and fulfillment.
 
-[Live demo](https://minimera.onrender.com) · [Judge walkthrough](docs/JUDGING.md) · [Architecture](docs/ARCHITECTURE.md)
+[Live demo](https://minimera.onrender.com) · [Watch the 2:28 demo](https://www.youtube.com/watch?v=eMzSokgCYYE) · [Judge walkthrough](docs/JUDGING.md) · [Architecture](docs/ARCHITECTURE.md)
 
 A customer has already paid, then asks to change the delivery address and remove an item. The request, original payment and warehouse order now disagree. Minimera holds fulfillment, explains the route using seven scoped facts, binds merchant approval to the exact order snapshot, obtains separate buyer approval and verifies the refund and replacement payment before preparing the corrected order for release.
 

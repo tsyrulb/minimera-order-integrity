@@ -1,0 +1,305 @@
+{
+  "schema": "minimera-challenge-first-verification/1.0",
+  "verified_at": "2026-11-11T16:56:05+00:00",
+  "origin": "https://minimera.onrender.com",
+  "source_commit": "09a5efc577816c4ff6a35065fe0a3d20ad3066dd",
+  "render_deploy_id": "dep-dbq9bv142hec73ele980",
+  "source_visibility": "private",
+  "service_plan": "free",
+  "passed": true,
+  "local": {
+    "check_count": 50,
+    "checks": {
+      "automated accessibility engine is available": true,
+      "default mode requires no PayPal or model credentials": true,
+      "delayed polling cannot revert a saved merchant approval": true,
+      "startup storage errors are visible instead of silently discarded": true,
+      "checkout cancellation leaves refund and replacement capture untouched": true,
+      "delayed buyer polling cannot hide a confirmed replacement payment": true,
+      "a cancelled checkout can continue through the same saved order": true,
+      "a failed refresh visibly marks the saved state as disconnected": true,
+      "reconnecting restores the verified current workflow": true,
+      "a failed Studio module leaves mobile navigation and recovery usable": true,
+      "Studio can reload without replacing the saved order": true,
+      "01-welcome layout and automated accessibility": true,
+      "customer request holds fulfillment before any refund": true,
+      "AI is a validated actual recording": true,
+      "02-review layout and automated accessibility": true,
+      "review does not announce a verified financial outcome": true,
+      "model context shows exactly seven scoped facts": true,
+      "model context excludes payment IDs and buyer capability": true,
+      "citation leads to the cited fact": true,
+      "buyer cannot start payment before merchant approval": true,
+      "separate buyer session cannot approve as merchant": true,
+      "Studio renders both custom widgets and event grid": true,
+      "Studio sends only allowlisted intents and keeps free text in the browser": true,
+      "long Studio conversation supports keyboard focus and scrolling": true,
+      "03-studio-analyst layout and automated accessibility": true,
+      "merchant approval binds the exact snapshot without moving money": true,
+      "buyer browser has no merchant cookie": true,
+      "04-independent-buyer layout and automated accessibility": true,
+      "merchant observes buyer result while fulfillment remains held": true,
+      "duplicate checkout return keeps the same refund and capture": true,
+      "verified outcome presents both completed legs and customer difference": true,
+      "05-corrected-order-released layout and automated accessibility": true,
+      "server restart preserves session, payment IDs and released order": true,
+      "Studio analyst reflects the completed workflow": true,
+      "original fully refunded and replacement separately completed": true,
+      "corrected warehouse order matches approved destination and items": true,
+      "downloaded event chain independently recomputed": true,
+      "export excludes buyer capabilities and labels simulation": true,
+      "06-exported-evidence layout and automated accessibility": true,
+      "another visitor gets an independent workspace": true,
+      "already-shipped scenario blocks approval without refund": true,
+      "07-already-shipped layout and automated accessibility": true,
+      "warehouse challenge is visible after approval without scrolling": true,
+      "warehouse change invalidates approval before any payment": true,
+      "stale outcome explains the changed warehouse and untouched payment legs": true,
+      "08-mobile-stale-approval layout and automated accessibility": true,
+      "a judge can restart the example without deleting state": true,
+      "09-mobile-new-example layout and automated accessibility": true,
+      "no browser JavaScript errors": true,
+      "walkthrough needs no external browser requests": true
+    },
+    "screens": 9,
+    "server_restart": true,
+    "fault_injection": true
+  },
+  "public": {
+    "check_count": 44,
+    "checks": {
+      "automated accessibility engine is available": true,
+      "default mode requires no PayPal or model credentials": true,
+      "01-welcome layout and automated accessibility": true,
+      "10-mobile-welcome layout and automated accessibility": true,
+      "customer request holds fulfillment before any refund": true,
+      "AI is a validated actual recording": true,
+      "02-review layout and automated accessibility": true,
+      "review does not announce a verified financial outcome": true,
+      "model context shows exactly seven scoped facts": true,
+      "model context excludes payment IDs and buyer capability": true,
+      "citation leads to the cited fact": true,
+      "buyer cannot start payment before merchant approval": true,
+      "separate buyer session cannot approve as merchant": true,
+      "Studio renders both custom widgets and event grid": true,
+      "Studio sends only allowlisted intents and keeps free text in the browser": true,
+      "long Studio conversation supports keyboard focus and scrolling": true,
+      "03-studio-analyst layout and automated accessibility": true,
+      "11-mobile-studio layout and automated accessibility": true,
+      "merchant approval binds the exact snapshot without moving money": true,
+      "buyer browser has no merchant cookie": true,
+      "04-independent-buyer layout and automated accessibility": true,
+      "12-mobile-buyer layout and automated accessibility": true,
+      "merchant observes buyer result while fulfillment remains held": true,
+      "duplicate checkout return keeps the same refund and capture": true,
+      "verified outcome presents both completed legs and customer difference": true,
+      "05-corrected-order-released layout and automated accessibility": true,
+      "client reload preserves session, payment IDs and released order": true,
+      "Studio analyst reflects the completed workflow": true,
+      "original fully refunded and replacement separately completed": true,
+      "corrected warehouse order matches approved destination and items": true,
+      "downloaded event chain independently recomputed": true,
+      "export excludes buyer capabilities and labels simulation": true,
+      "06-exported-evidence layout and automated accessibility": true,
+      "another visitor gets an independent workspace": true,
+      "already-shipped scenario blocks approval without refund": true,
+      "07-already-shipped layout and automated accessibility": true,
+      "warehouse challenge is visible after approval without scrolling": true,
+      "warehouse change invalidates approval before any payment": true,
+      "stale outcome explains the changed warehouse and untouched payment legs": true,
+      "08-mobile-stale-approval layout and automated accessibility": true,
+      "a judge can restart the example without deleting state": true,
+      "09-mobile-new-example layout and automated accessibility": true,
+      "no browser JavaScript errors": true,
+      "walkthrough needs no external browser requests": true
+    },
+    "screens": {
+      "01-welcome": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "10-mobile-welcome": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      },
+      "02-review": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "03-studio-analyst": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "11-mobile-studio": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      },
+      "04-independent-buyer": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "12-mobile-buyer": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      },
+      "05-corrected-order-released": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "06-exported-evidence": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "07-already-shipped": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "08-mobile-stale-approval": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      },
+      "09-mobile-new-example": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      }
+    },
+    "server_restart": false,
+    "client_reload": true,
+    "fault_injection": false,
+    "page_errors": []
+  },
+  "filmed_sandbox": {
+    "schema": "minimera-filmed-workflow-verification/1.0",
+    "checked_at": "2026-11-11T16:44:04+00:00",
+    "passed": true,
+    "check_count": 27,
+    "checks": {
+      "actual_sandbox_mode": true,
+      "original_refunded": true,
+      "full_dollar_refund_completed": true,
+      "refund_binds_original_capture": true,
+      "separate_seventy_cent_capture": true,
+      "thirty_cent_customer_difference": true,
+      "distinct_payment_ids": true,
+      "all_observations_are_paypal_sandbox": true,
+      "same_usd_currency": true,
+      "corrected_boston_destination": true,
+      "corrected_single_tote": true,
+      "released_corrected_payment_binding": true,
+      "merchant_approval_binds_snapshot": true,
+      "approval_payment_release_event_order": true,
+      "all_event_hashes_recomputed": true,
+      "seven_model_facts": true,
+      "sensitive_values_excluded_from_model_request": true,
+      "recorded_model_request_hash_recomputed": true,
+      "original_bedrock_recording_preserved": true,
+      "filmed_ai_is_honestly_labelled_recorded": true,
+      "filmed_failure_is_stale_simulation": true,
+      "failure_had_zero_payment_dispatch_claims": true,
+      "failure_has_no_refund_capture_or_checkout": true,
+      "no_fresh_model_attempts_for_filming": true,
+      "audit_contains_only_sandbox_host": true,
+      "provider_refund_read_precedes_replacement_capture": true,
+      "provider_capture_read_follows_capture_response": true
+    },
+    "amounts_usd": {
+      "refund": "1.00",
+      "replacement": "0.70",
+      "difference": "0.30"
+    },
+    "event_count": 13,
+    "sandbox_request_count": 58,
+    "fresh_model_calls": 0,
+    "evidence_sha256": "32756990f2e1b7edde9e6080e931c789e9ecf86a7b65b89ed60ccb005ae6be33",
+    "evidence_scope": "Actual PayPal Sandbox read-backs; synthetic merchant and warehouse; separately labelled controlled simulation; actual recorded Bedrock response",
+    "source_commit": "09a5efc577816c4ff6a35065fe0a3d20ad3066dd"
+  },
+  "video": {
+    "duration_seconds": 147.76,
+    "metadata": [
+      "Duration: 00:02:27.76, start: 0.000000, bitrate: 532 kb/s",
+      "Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt470bg/unknown/unknown, progressive), 1920x1080 [SAR 1:1 DAR 16:9], 376 kb/s, 25 fps, 25 tbr, 12800 tbn (default)",
+      "Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, mono, fltp, 151 kb/s (default)"
+    ],
+    "review_frame_count": 10,
+    "bytes": 9837526,
+    "sha256": "57812de74ee7078e8cbc6f686715dda441dada7107825b6de1a1434896126947",
+    "full_decode_passed": true,
+    "black_intervals": [],
+    "audio_volume": [
+      "mean_volume: -18.1 dB",
+      "max_volume: -1.4 dB"
+    ],
+    "reviewed_samples_seconds": [
+      1,
+      15,
+      31,
+      51,
+      65,
+      77,
+      97,
+      108,
+      122,
+      141
+    ]
+  },
+  "video_publication": "Local only; no YouTube upload",
+  "code_checks": {
+    "python_tests": 207,
+    "strict_mypy_modules": 35,
+    "python_worker_comparisons": 270,
+    "ruff": true,
+    "typescript": true,
+    "prettier": true,
+    "ui_build": true
+  },
+  "scope": "Synthetic merchant/warehouse. Actual PayPal Sandbox in the main recorded sequence; controlled simulation in the opening; actual recorded Bedrock. Public default mode uses simulated payments and recorded AI. Render Free idle and ephemeral-state limits remain."
+}

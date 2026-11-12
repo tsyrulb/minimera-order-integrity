@@ -1,0 +1,153 @@
+{
+  "id": "paypal-sandbox",
+  "label": "Live PayPal sandbox dispute",
+  "split": "live",
+  "story": "A real read of our synthetic USD 1.00 sandbox dispute. No goods were shipped. Carrier facts are unavailable, not assumed false.",
+  "source": {
+    "kind": "paypal-sandbox",
+    "label": "PayPal sandbox · live read",
+    "observed_at": "2026-11-05T07:39:17.779802+00:00",
+    "capture_link_verified": true,
+    "resource_fingerprint": "ae8a1f91fe4804ee",
+    "completion_basis": "Unsigned local observation from before the dispute",
+    "scope": "PayPal business fields only; no buyer profiles, messages or attachments forwarded."
+  },
+  "facts": [
+    {
+      "id": "F01",
+      "key": "case_status",
+      "label": "Case status",
+      "value": "WAITING_FOR_SELLER_RESPONSE",
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F02",
+      "key": "reason",
+      "label": "Reason",
+      "value": "MERCHANDISE_OR_SERVICE_NOT_RECEIVED",
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F03",
+      "key": "stage",
+      "label": "Stage",
+      "value": "INQUIRY",
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F04",
+      "key": "amount",
+      "label": "Disputed amount",
+      "value": "1.00",
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F05",
+      "key": "currency",
+      "label": "Currency",
+      "value": "USD",
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F06",
+      "key": "payment_status",
+      "label": "Current capture status",
+      "value": "PENDING",
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F07",
+      "key": "payment_previously_completed",
+      "label": "Completion observed before dispute",
+      "value": true,
+      "source": "merchant",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F08",
+      "key": "verified_capture_link",
+      "label": "Capture linked to dispute",
+      "value": true,
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F09",
+      "key": "refund_status",
+      "label": "Confirmed refund status",
+      "value": null,
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F10",
+      "key": "tracking_status",
+      "label": "Carrier tracking status",
+      "value": null,
+      "source": "carrier",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F11",
+      "key": "tracking_source",
+      "label": "Tracking source",
+      "value": "none",
+      "source": "merchant",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F12",
+      "key": "tracking_number_available",
+      "label": "Tracking available",
+      "value": null,
+      "source": "merchant",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F13",
+      "key": "proof_of_delivery_available",
+      "label": "Delivery proof available",
+      "value": null,
+      "source": "merchant",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F14",
+      "key": "destination_match",
+      "label": "Delivery destination matches",
+      "value": null,
+      "source": "merchant",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F15",
+      "key": "goods_type",
+      "label": "Goods type",
+      "value": "PHYSICAL",
+      "source": "merchant",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F16",
+      "key": "respond_by",
+      "label": "Seller response deadline",
+      "value": "2026-11-23T19:46:35.631000+00:00",
+      "source": "paypal",
+      "sensitivity": "task"
+    },
+    {
+      "id": "F17",
+      "key": "deadline_passed",
+      "label": "Response deadline passed",
+      "value": false,
+      "source": "merchant",
+      "sensitivity": "task"
+    }
+  ]
+}

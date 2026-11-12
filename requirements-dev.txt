@@ -1,0 +1,6 @@
+-r requirements.txt
+pytest==9.0.3
+playwright==1.60.0
+ruff==0.14.14
+mypy==1.19.1
+botocore-stubs==1.42.19

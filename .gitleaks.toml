@@ -1,0 +1,29 @@
+title = "Minimera: default rules with reviewed public evidence metadata"
+
+[extend]
+useDefault = true
+
+[[rules]]
+id = "generic-api-key"
+
+  # These cache identifiers are SHA-256 fingerprints, recomputed by the
+  # recorded-evidence and Worker parity checks. No file or rule is skipped.
+  [[rules.allowlists]]
+  description = "Recorded request cache fingerprints"
+  condition = "AND"
+  regexTarget = "line"
+  paths = ['''(^|/)reports/(experiments/[^/]+/)?(benchmark|paypal-model-run)\.json$''']
+  regexes = ['''^\s*"cache_key"\s*:\s*"[0-9a-f]{64}",?\s*$''']
+
+  # Gitleaks splits large files into fragments. These two public cache hashes
+  # cross fragment boundaries, truncating the property name or value. Match
+  # only the exact reviewed fingerprint fragments, in their named reports.
+  [[rules.allowlists]]
+  description = "Two cache fingerprints crossing scanner fragment boundaries"
+  condition = "AND"
+  regexTarget = "secret"
+  paths = ['''(^|/)reports/(experiments/qwen3-next-bedrock-20261104/)?benchmark\.json$''']
+  regexes = [
+    '''^3aab2dbecaea65a1150df94$''',
+    '''^cdc25b994804177341e11369aadb526e5b58a907321d03174276702a53409572$''',
+  ]

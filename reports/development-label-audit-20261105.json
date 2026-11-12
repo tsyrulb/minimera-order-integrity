@@ -1,0 +1,509 @@
+{
+  "recorded_at": "2026-11-05T06:43:17.541349+00:00",
+  "scope": "20 original development cases only",
+  "review_basis": "Programmatic consistency with explicit project rubric; not independent human adjudication",
+  "all_labels_match": true,
+  "cases": [
+    {
+      "case_id": "NTK-001",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "tracking"
+        ],
+        "required_citations": [
+          "F11",
+          "F17"
+        ],
+        "rationale": "The merchant must locate its shipment or tracking record."
+      },
+      "original": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "tracking"
+        ],
+        "required_citations": [
+          "F11",
+          "F17"
+        ],
+        "rationale": "Request a shipment/tracking record before assessing delivery."
+      }
+    },
+    {
+      "case_id": "NTK-002",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "delivery_confirmation"
+        ],
+        "required_citations": [
+          "F11",
+          "F12",
+          "F16"
+        ],
+        "rationale": "Independent delivery confirmation is missing."
+      },
+      "original": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "delivery_confirmation"
+        ],
+        "required_citations": [
+          "F11",
+          "F12"
+        ],
+        "rationale": "An in-transit event is not proof of delivery."
+      }
+    },
+    {
+      "case_id": "NTK-003",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "delivery_confirmation"
+        ],
+        "required_citations": [
+          "F11",
+          "F12",
+          "F16"
+        ],
+        "rationale": "Independent delivery confirmation is missing."
+      },
+      "original": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "delivery_confirmation"
+        ],
+        "required_citations": [
+          "F11",
+          "F12",
+          "F16"
+        ],
+        "rationale": "A merchant-only delivery claim requires independent delivery evidence."
+      }
+    },
+    {
+      "case_id": "NTK-004",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "prepare_delivery_evidence",
+        "missing_evidence": [],
+        "required_citations": [
+          "F11",
+          "F15",
+          "F16"
+        ],
+        "rationale": "The supplied carrier delivery, destination and document facts support preparation."
+      },
+      "original": {
+        "action": "prepare_delivery_evidence",
+        "missing_evidence": [],
+        "required_citations": [
+          "F11",
+          "F15",
+          "F16"
+        ],
+        "rationale": "Prepare the available carrier-backed delivery evidence for human review; this does not predict the dispute outcome."
+      }
+    },
+    {
+      "case_id": "NTK-005",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "destination_match"
+        ],
+        "required_citations": [
+          "F11",
+          "F15"
+        ],
+        "rationale": "The delivery destination has not been verified."
+      },
+      "original": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "destination_match"
+        ],
+        "required_citations": [
+          "F11",
+          "F15"
+        ],
+        "rationale": "Verify that the carrier destination matches the disputed order before relying on the document."
+      }
+    },
+    {
+      "case_id": "NTK-006",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "resolve_conflict"
+        ],
+        "required_citations": [
+          "F15"
+        ],
+        "rationale": "A blocker requires human review."
+      },
+      "original": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "resolve_conflict"
+        ],
+        "required_citations": [
+          "F11",
+          "F15"
+        ],
+        "rationale": "A confirmed destination mismatch requires a human to reconcile the evidence."
+      }
+    },
+    {
+      "case_id": "NTK-007",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "check_refund",
+        "missing_evidence": [
+          "refund_confirmation"
+        ],
+        "required_citations": [
+          "F08",
+          "F09",
+          "F04"
+        ],
+        "rationale": "The refund needs confirmation or reconciliation before relying on it."
+      },
+      "original": {
+        "action": "check_refund",
+        "missing_evidence": [
+          "refund_confirmation"
+        ],
+        "required_citations": [
+          "F08",
+          "F09"
+        ],
+        "rationale": "Check the pending refund rather than claiming that the buyer has received it."
+      }
+    },
+    {
+      "case_id": "NTK-008",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "check_refund",
+        "missing_evidence": [
+          "refund_confirmation"
+        ],
+        "required_citations": [
+          "F08",
+          "F09",
+          "F04"
+        ],
+        "rationale": "The refund needs confirmation or reconciliation before relying on it."
+      },
+      "original": {
+        "action": "check_refund",
+        "missing_evidence": [
+          "refund_confirmation"
+        ],
+        "required_citations": [
+          "F08"
+        ],
+        "rationale": "Obtain a matching completed refund record before asserting repayment."
+      }
+    },
+    {
+      "case_id": "NTK-009",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "no_action",
+        "missing_evidence": [],
+        "required_citations": [
+          "F01"
+        ],
+        "rationale": "The recorded case is closed or resolved."
+      },
+      "original": {
+        "action": "no_action",
+        "missing_evidence": [],
+        "required_citations": [
+          "F01",
+          "F08"
+        ],
+        "rationale": "No new seller response is indicated for this resolved fixture."
+      }
+    },
+    {
+      "case_id": "NTK-010",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "await_review",
+        "missing_evidence": [],
+        "required_citations": [
+          "F01"
+        ],
+        "rationale": "The case is waiting on another party."
+      },
+      "original": {
+        "action": "await_review",
+        "missing_evidence": [],
+        "required_citations": [
+          "F01",
+          "F03"
+        ],
+        "rationale": "Wait for the current review rather than submitting an unsolicited response."
+      }
+    },
+    {
+      "case_id": "NTK-011",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "await_review",
+        "missing_evidence": [],
+        "required_citations": [
+          "F01"
+        ],
+        "rationale": "The case is waiting on another party."
+      },
+      "original": {
+        "action": "await_review",
+        "missing_evidence": [],
+        "required_citations": [
+          "F01"
+        ],
+        "rationale": "Respect the current case state and await the buyer response."
+      }
+    },
+    {
+      "case_id": "NTK-012",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "tracking"
+        ],
+        "required_citations": [
+          "F11",
+          "F17"
+        ],
+        "rationale": "The merchant must locate its shipment or tracking record."
+      },
+      "original": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "tracking"
+        ],
+        "required_citations": [
+          "F06",
+          "F07",
+          "F17"
+        ],
+        "rationale": "Current pending status does not erase the earlier completion observation or establish a refund; shipment evidence is still needed."
+      }
+    },
+    {
+      "case_id": "NTK-013",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "payment_link"
+        ],
+        "required_citations": [
+          "F21"
+        ],
+        "rationale": "A blocker requires human review."
+      },
+      "original": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "payment_link"
+        ],
+        "required_citations": [
+          "F21"
+        ],
+        "rationale": "Do not prepare an order-specific answer until the case-to-capture association is corrected."
+      }
+    },
+    {
+      "case_id": "NTK-014",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "deadline"
+        ],
+        "required_citations": [
+          "F19"
+        ],
+        "rationale": "A blocker requires human review."
+      },
+      "original": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "deadline"
+        ],
+        "required_citations": [
+          "F18",
+          "F19"
+        ],
+        "rationale": "A human must review the expired response window and available next steps."
+      }
+    },
+    {
+      "case_id": "NTK-015",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "resolve_conflict"
+        ],
+        "required_citations": [
+          "F22"
+        ],
+        "rationale": "A blocker requires human review."
+      },
+      "original": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "resolve_conflict"
+        ],
+        "required_citations": [
+          "F11",
+          "F22"
+        ],
+        "rationale": "Resolve contradictory tracking evidence before drafting a delivery assertion."
+      }
+    },
+    {
+      "case_id": "NTK-016",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "manual_review",
+        "missing_evidence": [],
+        "required_citations": [
+          "F20"
+        ],
+        "rationale": "A blocker requires human review."
+      },
+      "original": {
+        "action": "manual_review",
+        "missing_evidence": [],
+        "required_citations": [
+          "F20"
+        ],
+        "rationale": "This shipping-focused assistant does not decide service-fulfilment disputes."
+      }
+    },
+    {
+      "case_id": "NTK-017",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "deadline"
+        ],
+        "required_citations": [
+          "F19"
+        ],
+        "rationale": "A blocker requires human review."
+      },
+      "original": {
+        "action": "manual_review",
+        "missing_evidence": [
+          "deadline"
+        ],
+        "required_citations": [
+          "F18",
+          "F19"
+        ],
+        "rationale": "Check the actual response window before preparing a timed seller response."
+      }
+    },
+    {
+      "case_id": "NTK-018",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "delivery_confirmation"
+        ],
+        "required_citations": [
+          "F11",
+          "F12",
+          "F16"
+        ],
+        "rationale": "Independent delivery confirmation is missing."
+      },
+      "original": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "delivery_confirmation"
+        ],
+        "required_citations": [
+          "F11",
+          "F12"
+        ],
+        "rationale": "Investigate the delivery exception and obtain delivery evidence; do not assert delivery."
+      }
+    },
+    {
+      "case_id": "NTK-019",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "delivery_confirmation"
+        ],
+        "required_citations": [
+          "F11",
+          "F12",
+          "F16"
+        ],
+        "rationale": "Independent delivery confirmation is missing."
+      },
+      "original": {
+        "action": "gather_evidence",
+        "missing_evidence": [
+          "delivery_confirmation"
+        ],
+        "required_citations": [
+          "F11",
+          "F16"
+        ],
+        "rationale": "Obtain the actual delivery confirmation before preparing an evidence-backed reply."
+      }
+    },
+    {
+      "case_id": "NTK-020",
+      "action_and_missing_evidence_match": true,
+      "calculated": {
+        "action": "check_refund",
+        "missing_evidence": [
+          "refund_confirmation"
+        ],
+        "required_citations": [
+          "F08",
+          "F09",
+          "F04"
+        ],
+        "rationale": "The refund needs confirmation or reconciliation before relying on it."
+      },
+      "original": {
+        "action": "check_refund",
+        "missing_evidence": [
+          "refund_confirmation"
+        ],
+        "required_citations": [
+          "F04",
+          "F08",
+          "F09"
+        ],
+        "rationale": "Reconcile the partial refund with the disputed amount; it is not evidence of full repayment."
+      }
+    }
+  ],
+  "new_dataset_sha256": "e4fa273061adad8db53699e66c187cdaca2eb42e2447769a591127c683fe77e0",
+  "new_reporting_case_count": 10
+}

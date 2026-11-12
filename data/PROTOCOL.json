@@ -1,0 +1,28 @@
+{
+  "version": "inr-evaluation/1.0.0",
+  "recorded_at": "2026-11-03T21:41:35.974809+00:00",
+  "dataset_sha256": "72e320092dd2530be427c096844c97b0dd815f8c7aec78f5ae02ad8e3335d40c",
+  "model": "qwen2.5:3b",
+  "prompt_version": "inr-assistant/1.2.0",
+  "policy_version": "inr-context/1.0.1",
+  "settings": {
+    "temperature": 0,
+    "seed": 42,
+    "num_ctx": 3072,
+    "num_predict": 380,
+    "num_thread": 4,
+    "num_batch": 64
+  },
+  "partitions": {
+    "development": 20,
+    "heldout": 10
+  },
+  "gates": {
+    "minimum_action_accuracy": 0.9,
+    "minimum_missing_f1": 0.8,
+    "require_all_candidate_outputs_valid": true,
+    "maximum_unrelated_candidate_fields": 0,
+    "allow_action_accuracy_regression": false
+  },
+  "provenance": "Local project protocol recorded during development evaluation, before any held-out generations. Not an external preregistration. One development fixture was used to select the local model and refine instructions. Fixture authors know the held-out contents; the split is not independently blinded. These thresholds are engineering choices, not legal standards."
+}

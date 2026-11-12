@@ -1,0 +1,241 @@
+.studio-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 23px 25px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  margin-bottom: 22px;
+}
+.studio-intro h2 {
+  font-size: 18px;
+  letter-spacing: -0.3px;
+}
+.studio-intro p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-top: 8px;
+  max-width: 65ch;
+}
+.studio-intro small {
+  font-size: 10px;
+  line-height: 1.7;
+  color: var(--muted);
+  display: block;
+  margin-top: 10px;
+}
+.studio-intro-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 9px;
+  flex-shrink: 0;
+}
+.studio-intro-actions .button {
+  white-space: nowrap;
+  font-size: 12px;
+}
+.studio-frame {
+  height: 810px;
+  min-height: 600px;
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.studio-decision {
+  padding: 23px;
+  height: 100%;
+  overflow: auto;
+  font-family: "IBM Plex Sans", sans-serif;
+  color: var(--ink);
+  background: #fff;
+}
+.studio-decision .eyebrow {
+  font-size: 10px;
+  margin-bottom: 16px;
+  letter-spacing: 0.1px;
+}
+.studio-decision h3 {
+  font-size: 21px;
+  line-height: 1.4;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+  margin: 13px 0;
+}
+.studio-decision p {
+  font-size: 13px;
+  line-height: 1.85;
+  color: var(--muted);
+  margin: 12px 0 20px;
+}
+.studio-decision .caption {
+  font-size: 11px;
+  line-height: 1.8;
+  margin-top: 14px;
+}
+.studio-decision .button {
+  font-size: 12px;
+  min-height: 42px;
+}
+.studio-comparison {
+  container-type: inline-size;
+  height: 100%;
+  padding: 19px 22px;
+  background: #fff;
+  overflow: auto;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+.studio-comparison .panel-heading {
+  margin-bottom: 16px;
+}
+.studio-comparison .eyebrow {
+  font-size: 10px;
+  margin-bottom: 5px;
+  letter-spacing: 0.1px;
+}
+.studio-comparison h3 {
+  font-size: 16px;
+}
+.studio-comparison .text-button {
+  font-size: 11px;
+}
+.studio-context-link {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  align-items: center;
+  margin-top: 13px;
+  font-size: 10px;
+  color: var(--muted);
+}
+.studio-context-link > button {
+  margin-left: auto;
+  font-size: 10px;
+}
+.compact-systems .system-card {
+  padding: 13px;
+}
+.compact-systems .system-heading {
+  font-size: 10px;
+  gap: 5px;
+}
+.compact-systems .source-kind {
+  font-size: 8px;
+}
+.compact-systems .system-value {
+  font-size: 16px;
+  line-height: 1.4;
+  margin-top: 12px;
+}
+.compact-systems .system-card > p {
+  font-size: 10px;
+  margin-top: 6px;
+}
+.compact-systems .system-footer {
+  font-size: 9px;
+  gap: 5px;
+  margin-top: 16px;
+}
+.studio-frame .ag-studio-chart-title {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+@container (max-width: 600px) {
+  .compact-systems {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  .compact-systems .source-link {
+    height: 10px;
+    transform: rotate(90deg);
+  }
+}
+@media (max-width: 1100px) {
+  .studio-intro {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .studio-intro-actions {
+    justify-content: flex-start;
+  }
+  .studio-comparison {
+    padding: 16px;
+  }
+  .studio-context-link {
+    font-size: 9px;
+  }
+  .studio-decision {
+    padding: 18px;
+  }
+  .studio-decision h3 {
+    font-size: 19px;
+  }
+  .studio-decision p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 700px) {
+  .studio-intro {
+    padding: 19px;
+  }
+  .studio-intro h2 {
+    font-size: 17px;
+  }
+  .studio-intro p {
+    font-size: 12px;
+  }
+  .studio-intro-actions {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .studio-intro-actions .button {
+    flex: 1;
+    font-size: 11px;
+  }
+  .studio-intro small {
+    font-size: 9px;
+  }
+  .studio-frame {
+    height: 1050px;
+  }
+  .studio-comparison {
+    padding: 16px;
+  }
+  .studio-comparison .panel-heading {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .studio-comparison h3 {
+    font-size: 15px;
+  }
+  .compact-systems .system-card {
+    padding: 13px;
+  }
+  .compact-systems .system-value {
+    font-size: 16px;
+  }
+  .compact-systems .system-heading {
+    font-size: 10px;
+  }
+  .compact-systems .system-footer {
+    font-size: 9px;
+  }
+  .studio-context-link > button {
+    margin-left: 0;
+    font-size: 10px;
+  }
+  .studio-decision {
+    padding: 16px;
+  }
+  .studio-decision h3 {
+    font-size: 19px;
+  }
+}
+.studio-frame .ag-studio-ai-scroll-content:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: -3px;
+}

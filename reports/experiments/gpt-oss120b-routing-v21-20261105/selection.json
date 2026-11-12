@@ -1,0 +1,68 @@
+{
+  "selected_at": "2026-11-05T07:15:50.877983+00:00",
+  "selection_basis": "Development outputs only. All 20 development cases passed action, missing-evidence and structural checks in each context mode.",
+  "model": "openai.gpt-oss-120b-1:0",
+  "prompt_version": "inr-assistant/2.1.0",
+  "settings": {
+    "temperature": 0,
+    "maxTokens": 4096,
+    "output_format": "json_schema",
+    "reasoning_effort": "low"
+  },
+  "dataset_sha256": "e4fa273061adad8db53699e66c187cdaca2eb42e2447769a591127c683fe77e0",
+  "protocol_sha256": "7ccba7000e48c29ff54002f5f6cc23cf7fa9b4c0b59f332fdc54a27da6bf0882",
+  "reporting_generations_observed_at_selection": 0,
+  "worked_examples_from_development": [
+    "NTK-002",
+    "NTK-004",
+    "NTK-006",
+    "NTK-012",
+    "NTK-016",
+    "NTK-017"
+  ],
+  "development_scores": [
+    {
+      "split": "development",
+      "mode": "full",
+      "attempts": 20,
+      "valid_outputs": 20,
+      "action_correct": 20,
+      "action_accuracy": 1.0,
+      "missing_exact": 20,
+      "missing_f1": 1.0,
+      "mean_sensitive_fields_sent": 8.0,
+      "mean_context_bytes": 2511,
+      "output_sensitive_matches": 0,
+      "mean_duration_ms": 3467
+    },
+    {
+      "split": "development",
+      "mode": "masked",
+      "attempts": 20,
+      "valid_outputs": 20,
+      "action_correct": 20,
+      "action_accuracy": 1.0,
+      "missing_exact": 20,
+      "missing_f1": 1.0,
+      "mean_sensitive_fields_sent": 3.0,
+      "mean_context_bytes": 2445,
+      "output_sensitive_matches": 0,
+      "mean_duration_ms": 3265
+    },
+    {
+      "split": "development",
+      "mode": "purpose",
+      "attempts": 20,
+      "valid_outputs": 20,
+      "action_correct": 20,
+      "action_accuracy": 1.0,
+      "missing_exact": 20,
+      "missing_f1": 1.0,
+      "mean_sensitive_fields_sent": 0.0,
+      "mean_context_bytes": 1754,
+      "output_sensitive_matches": 0,
+      "mean_duration_ms": 3033
+    }
+  ],
+  "limits": "Developer/AI-authored references, checked against an explicit project rubric; not independent human adjudication. The new reporting variants are known to the creator, not independently blinded. This record is local, not external preregistration."
+}

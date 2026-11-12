@@ -1,0 +1,185 @@
+{
+  "schema": "order-integrity-model-fixtures/1.0.0",
+  "synthetic": true,
+  "independent_evaluation": false,
+  "description": "Developer-authored functional fixtures, not a blinded benchmark or production performance estimate. paypal_sandbox denotes the expected fact-origin label in these model-only fixtures, not a live payment observation.",
+  "fixtures": [
+    {
+      "scenario": "address_change",
+      "destination_changed": true,
+      "remove_item": true,
+      "payment_fact_origin": "simulator",
+      "expected_route": "replace_order",
+      "observed_route": "replace_order",
+      "policy_agrees": true,
+      "request_hash": "d12880849f85067b630bd44a630b28567fa706a22fdf765370ec6312f5999a4d",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "address_change",
+      "destination_changed": true,
+      "remove_item": true,
+      "payment_fact_origin": "paypal_sandbox",
+      "expected_route": "replace_order",
+      "observed_route": "replace_order",
+      "policy_agrees": true,
+      "request_hash": "be1707bf105af00be2aeb5e424b6d5a9176308f518d044f85207138c37cb8a6e",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "address_change",
+      "destination_changed": true,
+      "remove_item": false,
+      "payment_fact_origin": "simulator",
+      "expected_route": "replace_order",
+      "observed_route": "replace_order",
+      "policy_agrees": true,
+      "request_hash": "e125bdc4af29871eecfc31c038e11093563a55e79ba994a0c799887dac138702",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "address_change",
+      "destination_changed": true,
+      "remove_item": false,
+      "payment_fact_origin": "paypal_sandbox",
+      "expected_route": "replace_order",
+      "observed_route": "replace_order",
+      "policy_agrees": true,
+      "request_hash": "950c4e62343ed4d6d444032471b94f8c4d11195f73f40e424ca9098eeb4f8000",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "address_change",
+      "destination_changed": false,
+      "remove_item": true,
+      "payment_fact_origin": "simulator",
+      "expected_route": "replace_order",
+      "observed_route": "replace_order",
+      "policy_agrees": true,
+      "request_hash": "0a0366e2fb2bde6acaded90d26ce771ccac16ef395c1c32166f33891a0d65b60",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "address_change",
+      "destination_changed": false,
+      "remove_item": true,
+      "payment_fact_origin": "paypal_sandbox",
+      "expected_route": "replace_order",
+      "observed_route": "replace_order",
+      "policy_agrees": true,
+      "request_hash": "f8c2c54fa3afb92f37b53e7713ae72bd841d4a41c38f38577c23f33b764ff484",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "address_change",
+      "destination_changed": false,
+      "remove_item": false,
+      "payment_fact_origin": "simulator",
+      "expected_route": "no_change",
+      "observed_route": "no_change",
+      "policy_agrees": true,
+      "request_hash": "3b011f2e762ca95bd7f6d283db53508349b60ea58a045cf15863f5ca108455c5",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "address_change",
+      "destination_changed": false,
+      "remove_item": false,
+      "payment_fact_origin": "paypal_sandbox",
+      "expected_route": "no_change",
+      "observed_route": "no_change",
+      "policy_agrees": true,
+      "request_hash": "94f8b257323654ca350fa8d3517b68213b2fe3f0d38493f1a6288f826b35d01e",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "already_shipped",
+      "destination_changed": true,
+      "remove_item": true,
+      "payment_fact_origin": "simulator",
+      "expected_route": "manual_review",
+      "observed_route": "manual_review",
+      "policy_agrees": true,
+      "request_hash": "7c6fbd9d227b9836cc3c0d98a713af14b98467a8db25a8bc6634b68dc700e394",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "already_shipped",
+      "destination_changed": true,
+      "remove_item": true,
+      "payment_fact_origin": "paypal_sandbox",
+      "expected_route": "manual_review",
+      "observed_route": "manual_review",
+      "policy_agrees": true,
+      "request_hash": "a48e64866b53e4a962f7c312b59210a8acce8a05893895f80433b53a0314bd26",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "already_shipped",
+      "destination_changed": true,
+      "remove_item": false,
+      "payment_fact_origin": "simulator",
+      "expected_route": "manual_review",
+      "observed_route": "manual_review",
+      "policy_agrees": true,
+      "request_hash": "c15aa436ff7316a4fa05a1d806e552a9ae049243811b7525e0ce4046466fcc98",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "already_shipped",
+      "destination_changed": true,
+      "remove_item": false,
+      "payment_fact_origin": "paypal_sandbox",
+      "expected_route": "manual_review",
+      "observed_route": "manual_review",
+      "policy_agrees": true,
+      "request_hash": "a54d9ad792846457d2ae8df85d0b6369bea4362cc2abceea6bf3858ea46bfafc",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "already_shipped",
+      "destination_changed": false,
+      "remove_item": true,
+      "payment_fact_origin": "simulator",
+      "expected_route": "manual_review",
+      "observed_route": "manual_review",
+      "policy_agrees": true,
+      "request_hash": "22dc17d6466469901d907dae822a33b09736333e62ca3d8cf434dc6daa47cfbc",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "already_shipped",
+      "destination_changed": false,
+      "remove_item": true,
+      "payment_fact_origin": "paypal_sandbox",
+      "expected_route": "manual_review",
+      "observed_route": "manual_review",
+      "policy_agrees": true,
+      "request_hash": "02cc8a68b609d2eb2efd0db69cffede229621e7d4a0227da318bd629fce008e7",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "already_shipped",
+      "destination_changed": false,
+      "remove_item": false,
+      "payment_fact_origin": "simulator",
+      "expected_route": "manual_review",
+      "observed_route": "manual_review",
+      "policy_agrees": true,
+      "request_hash": "eb53202a1d230be256f06b4ecbb63b9e22493630ccd0fd8117ce70edf6be884d",
+      "delivery": "bedrock"
+    },
+    {
+      "scenario": "already_shipped",
+      "destination_changed": false,
+      "remove_item": false,
+      "payment_fact_origin": "paypal_sandbox",
+      "expected_route": "manual_review",
+      "observed_route": "manual_review",
+      "policy_agrees": true,
+      "request_hash": "b9461373c4c4a550db3db2b8f5ea5500befad062f041ca642bbfb8366c9b5bcb",
+      "delivery": "bedrock"
+    }
+  ],
+  "hash": "18361947aec2d0aa5c56cd92411ae1b37643f6a351252798d6c44036561be563"
+}

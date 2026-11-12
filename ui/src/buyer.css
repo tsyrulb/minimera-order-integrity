@@ -1,0 +1,347 @@
+.buyer-app {
+  min-height: 100vh;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+}
+.buyer-top {
+  min-height: 86px;
+  background: #fff;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 0 max(32px, calc((100vw - 1010px) / 2));
+}
+.northline-brand {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 1;
+  color: var(--ink);
+}
+.northline-brand > span {
+  display: block;
+  font-size: 9px;
+  letter-spacing: 5px;
+  margin-top: 8px;
+}
+.buyer-main {
+  max-width: 1010px;
+  width: calc(100% - 64px);
+  margin: 33px auto 58px;
+}
+.back-link {
+  display: inline-flex;
+  font-size: 12px;
+  color: var(--muted);
+  padding: 5px 0;
+  margin-bottom: 26px;
+}
+.back-link:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.buyer-main > .eyebrow {
+  display: none;
+}
+.buyer-main > h1 {
+  font-size: 35px;
+  letter-spacing: -1.2px;
+}
+.buyer-main > .page-subtitle {
+  margin: 10px 0 28px;
+  font-size: 14px;
+}
+.buyer-columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: 26px;
+}
+.buyer-app .card {
+  padding: 28px;
+}
+.buyer-app .panel-heading h2 {
+  font-size: 18px;
+}
+.buyer-app .product {
+  padding: 18px 0;
+}
+.buyer-app .product > div > strong {
+  font-size: 14px;
+}
+.buyer-app .product small {
+  font-size: 12px;
+}
+.buyer-app .product > b {
+  font-size: 13px;
+}
+.buyer-app .product-art {
+  width: 66px;
+  height: 73px;
+}
+.buyer-app .address {
+  margin: 23px 0;
+  padding-top: 23px;
+  border-top: 1px solid var(--line);
+}
+.buyer-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  padding-top: 21px;
+  margin-top: 23px;
+  font-size: 13px;
+}
+.buyer-total > strong {
+  font-family: var(--mono);
+  font-size: 23px;
+  font-weight: 400;
+  letter-spacing: -0.8px;
+}
+.buyer-app .caption {
+  font-size: 11px;
+  margin-top: 21px;
+}
+.buyer-change h2 {
+  font-size: 23px;
+  letter-spacing: -0.5px;
+  line-height: 1.35;
+}
+.buyer-change > p {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.85;
+  margin-top: 15px;
+}
+.buyer-change > .metric-icon {
+  margin-bottom: 19px;
+}
+.buyer-change > .badge {
+  margin-bottom: 17px;
+}
+.field-label {
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 24px 0 8px;
+}
+.buyer-change select {
+  width: 100%;
+  min-height: 46px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 11px 10px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+}
+.checkbox-field {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px 0;
+  margin-top: 5px;
+  font-size: 13px;
+  cursor: pointer;
+}
+.checkbox-field > input {
+  width: 17px;
+  height: 17px;
+  margin: 2px 0 0;
+  accent-color: var(--green);
+  flex-shrink: 0;
+}
+.checkbox-field small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+.buyer-callout {
+  display: flex;
+  gap: 10px;
+  background: var(--surface);
+  color: var(--muted);
+  padding: 15px;
+  border-radius: 4px;
+  margin: 10px 0 24px;
+}
+.buyer-callout p {
+  font-size: 11px;
+  line-height: 1.8;
+}
+.buyer-callout > svg {
+  margin-top: 2px;
+}
+.buyer-change > .button {
+  margin-top: 24px;
+  width: 100%;
+  min-height: 45px;
+  font-size: 12px;
+}
+.buyer-change > small {
+  display: block;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: 13px;
+  line-height: 1.75;
+}
+.buyer-app .paypal-button {
+  background: #143b70;
+  color: #fff;
+  border-color: #143b70;
+}
+.buyer-app .paypal-button:hover {
+  background: #0b2b55;
+}
+.buyer-money {
+  display: grid;
+  gap: 0;
+  margin: 22px 0 0;
+  padding: 4px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.buyer-money > span {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 0;
+  font-size: 12px;
+  color: var(--muted);
+}
+.buyer-money > span + span {
+  border-top: 1px solid var(--line);
+}
+.buyer-money strong {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--ink);
+}
+.success-circle {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  color: var(--green);
+  border: 1px solid #b3cfc0;
+  border-radius: 50%;
+  margin-bottom: 22px;
+}
+.buyer-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  padding: 23px;
+  font-size: 11px;
+  color: var(--muted);
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+}
+.buyer-footer strong {
+  font-weight: 600;
+  color: var(--ink);
+}
+.buyer-footer > span {
+  margin-inline: 3px;
+}
+.checkout-notice {
+  display: flex;
+  gap: 10px;
+  color: var(--muted);
+  background: var(--accent-soft);
+  padding: 14px 16px;
+  margin: 15px 0;
+  font-size: 12px;
+  line-height: 1.7;
+  border-radius: var(--radius);
+}
+@media (max-width: 700px) {
+  .buyer-top {
+    min-height: 76px;
+    padding: 0 19px;
+    gap: 10px;
+  }
+  .northline-brand {
+    font-size: 19px;
+    letter-spacing: 1.5px;
+  }
+  .northline-brand > span {
+    font-size: 8px;
+    letter-spacing: 4px;
+    margin-top: 7px;
+  }
+  .buyer-top .badge {
+    font-size: 9px;
+    padding: 4px 6px;
+  }
+  .buyer-main {
+    width: calc(100% - 34px);
+    margin: 23px auto 35px;
+  }
+  .back-link {
+    font-size: 11px;
+    margin-bottom: 22px;
+  }
+  .buyer-main > h1 {
+    font-size: 29px;
+  }
+  .buyer-main > .page-subtitle {
+    font-size: 12px;
+    margin-bottom: 22px;
+  }
+  .buyer-columns {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+  .buyer-app .card {
+    padding: 22px;
+  }
+  .buyer-change {
+    grid-row: 1;
+  }
+  .buyer-order {
+    grid-row: 2;
+  }
+  .buyer-change h2 {
+    font-size: 22px;
+  }
+  .buyer-change > p {
+    font-size: 12px;
+  }
+  .buyer-app .product > div > strong {
+    font-size: 12px;
+  }
+  .buyer-app .product small {
+    font-size: 11px;
+  }
+  .buyer-app .product > b {
+    font-size: 12px;
+  }
+  .buyer-app .address strong {
+    font-size: 12px;
+  }
+  .buyer-app .address span {
+    font-size: 11px;
+  }
+  .buyer-money strong {
+    font-size: 12px;
+  }
+  .buyer-footer {
+    font-size: 10px;
+    padding: 19px 20px;
+    gap: 6px;
+  }
+  .buyer-footer > span {
+    display: none;
+  }
+}

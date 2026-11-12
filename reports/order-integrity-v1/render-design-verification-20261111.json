@@ -1,0 +1,262 @@
+{
+  "schema": "minimera-render-design-verification/1.0",
+  "origin": "https://minimera.onrender.com",
+  "verified_at": "2026-11-11T15:53:44+00:00",
+  "source_commit": "aeb663cff7a49e3472bf061b5ca759ae04307469",
+  "render_deploy_id": "dep-dbq8thl6e07s73feldm0",
+  "source_visibility": "private",
+  "service_plan": "free",
+  "passed": true,
+  "design_reference": "https://render.com/docs/your-first-deploy",
+  "fonts": "Existing locally bundled IBM Plex under its OFL; no Render font or brand asset copied",
+  "changed_ui_files": [
+    {
+      "path": "ui/src/Merchant.tsx",
+      "sha256": "ce03e04732367164f35308c10848ddb7bd506e56ff7810672cfe455cb7f3cd21"
+    },
+    {
+      "path": "ui/src/Studio.tsx",
+      "sha256": "0d73b84433ff1d8a8f22f7095cfe66f23c3b6847e2cb24613392f028b41688c3"
+    },
+    {
+      "path": "ui/src/buyer.css",
+      "sha256": "d122dba4ff95b2eff80d43079849646eb09d4cf9eb20c0692dacb61b4de4164e"
+    },
+    {
+      "path": "ui/src/components.tsx",
+      "sha256": "d4c1dbfe15042231acfa5b9905eadeff519a94f7d79ac61156c3e42b8a14863f"
+    },
+    {
+      "path": "ui/src/order-scene.css",
+      "sha256": "e9263a67732bb511c87d7abc21007648e67f11d6e97b5ac2622824c020cf276e"
+    },
+    {
+      "path": "ui/src/studio-overrides.css",
+      "sha256": "349d96d11a7e7aa7d830a691d5f7b8079cc1c6574513cfe62df33f1072353005"
+    },
+    {
+      "path": "ui/src/style.css",
+      "sha256": "4ef3663fb9823a53524684d9bf8c6a716965eb7dfc4ef9937af4ae582b04d7bf"
+    }
+  ],
+  "unchanged_workflow_data_and_recording_files": 56,
+  "local": {
+    "checks": {
+      "automated accessibility engine is available": true,
+      "default mode requires no PayPal or model credentials": true,
+      "delayed polling cannot revert a saved merchant approval": true,
+      "startup storage errors are visible instead of silently discarded": true,
+      "checkout cancellation leaves refund and replacement capture untouched": true,
+      "delayed buyer polling cannot hide a confirmed replacement payment": true,
+      "a cancelled checkout can continue through the same saved order": true,
+      "a failed refresh visibly marks the saved state as disconnected": true,
+      "reconnecting restores the verified current workflow": true,
+      "a failed Studio module leaves mobile navigation and recovery usable": true,
+      "Studio can reload without replacing the saved order": true,
+      "01-welcome layout and automated accessibility": true,
+      "customer request holds fulfillment before any refund": true,
+      "AI is a validated actual recording": true,
+      "02-review layout and automated accessibility": true,
+      "model context shows exactly seven scoped facts": true,
+      "model context excludes payment IDs and buyer capability": true,
+      "citation leads to the cited fact": true,
+      "buyer cannot start payment before merchant approval": true,
+      "separate buyer session cannot approve as merchant": true,
+      "Studio renders both custom widgets and event grid": true,
+      "Studio sends only allowlisted intents and keeps free text in the browser": true,
+      "long Studio conversation supports keyboard focus and scrolling": true,
+      "03-studio-analyst layout and automated accessibility": true,
+      "merchant approval binds the exact snapshot without moving money": true,
+      "buyer browser has no merchant cookie": true,
+      "04-independent-buyer layout and automated accessibility": true,
+      "merchant observes buyer result while fulfillment remains held": true,
+      "duplicate checkout return keeps the same refund and capture": true,
+      "05-corrected-order-released layout and automated accessibility": true,
+      "server restart preserves session, payment IDs and released order": true,
+      "Studio analyst reflects the completed workflow": true,
+      "original fully refunded and replacement separately completed": true,
+      "corrected warehouse order matches approved destination and items": true,
+      "downloaded event chain independently recomputed": true,
+      "export excludes buyer capabilities and labels simulation": true,
+      "06-exported-evidence layout and automated accessibility": true,
+      "another visitor gets an independent workspace": true,
+      "already-shipped scenario blocks approval without refund": true,
+      "07-already-shipped layout and automated accessibility": true,
+      "warehouse change invalidates approval before any payment": true,
+      "08-mobile-stale-approval layout and automated accessibility": true,
+      "a judge can restart the example without deleting state": true,
+      "09-mobile-new-example layout and automated accessibility": true,
+      "no browser JavaScript errors": true,
+      "walkthrough needs no external browser requests": true
+    },
+    "check_count": 46,
+    "screen_count": 9,
+    "fault_injection": true,
+    "server_restart": true
+  },
+  "public": {
+    "checks": {
+      "automated accessibility engine is available": true,
+      "default mode requires no PayPal or model credentials": true,
+      "01-welcome layout and automated accessibility": true,
+      "10-mobile-welcome layout and automated accessibility": true,
+      "customer request holds fulfillment before any refund": true,
+      "AI is a validated actual recording": true,
+      "02-review layout and automated accessibility": true,
+      "model context shows exactly seven scoped facts": true,
+      "model context excludes payment IDs and buyer capability": true,
+      "citation leads to the cited fact": true,
+      "buyer cannot start payment before merchant approval": true,
+      "separate buyer session cannot approve as merchant": true,
+      "Studio renders both custom widgets and event grid": true,
+      "Studio sends only allowlisted intents and keeps free text in the browser": true,
+      "long Studio conversation supports keyboard focus and scrolling": true,
+      "03-studio-analyst layout and automated accessibility": true,
+      "11-mobile-studio layout and automated accessibility": true,
+      "merchant approval binds the exact snapshot without moving money": true,
+      "buyer browser has no merchant cookie": true,
+      "04-independent-buyer layout and automated accessibility": true,
+      "12-mobile-buyer layout and automated accessibility": true,
+      "merchant observes buyer result while fulfillment remains held": true,
+      "duplicate checkout return keeps the same refund and capture": true,
+      "05-corrected-order-released layout and automated accessibility": true,
+      "client reload preserves session, payment IDs and released order": true,
+      "Studio analyst reflects the completed workflow": true,
+      "original fully refunded and replacement separately completed": true,
+      "corrected warehouse order matches approved destination and items": true,
+      "downloaded event chain independently recomputed": true,
+      "export excludes buyer capabilities and labels simulation": true,
+      "06-exported-evidence layout and automated accessibility": true,
+      "another visitor gets an independent workspace": true,
+      "already-shipped scenario blocks approval without refund": true,
+      "07-already-shipped layout and automated accessibility": true,
+      "warehouse change invalidates approval before any payment": true,
+      "08-mobile-stale-approval layout and automated accessibility": true,
+      "a judge can restart the example without deleting state": true,
+      "09-mobile-new-example layout and automated accessibility": true,
+      "no browser JavaScript errors": true,
+      "walkthrough needs no external browser requests": true
+    },
+    "check_count": 40,
+    "screen_count": 12,
+    "fault_injection": false,
+    "server_restart": false,
+    "client_reload": true,
+    "page_errors": [],
+    "external_browser_hosts": [],
+    "screens": {
+      "01-welcome": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "10-mobile-welcome": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      },
+      "02-review": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "03-studio-analyst": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "11-mobile-studio": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      },
+      "04-independent-buyer": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "12-mobile-buyer": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      },
+      "05-corrected-order-released": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "06-exported-evidence": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "07-already-shipped": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 1366,
+          "height": 768
+        },
+        "accessibility_violations": []
+      },
+      "08-mobile-stale-approval": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      },
+      "09-mobile-new-example": {
+        "horizontal_overflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "accessibility_violations": []
+      }
+    }
+  },
+  "code_checks": {
+    "python_tests": 207,
+    "strict_mypy_modules": 35,
+    "python_worker_comparisons": 270,
+    "ruff": true,
+    "typescript": true,
+    "prettier": true,
+    "production_ui_build": true
+  },
+  "sandbox_enabled": false,
+  "fresh_ai_enabled": false,
+  "known_limits": [
+    "Render Free idle wake and ephemeral state limits remain.",
+    "Automated accessibility checks do not establish complete accessibility.",
+    "Existing local video and release archives show the previous interface and need updating before submission."
+  ]
+}

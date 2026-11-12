@@ -1,0 +1,41 @@
+{
+  "schema": "minimera-recorded-workflow-check/1.0",
+  "checked_at": "2026-11-11T12:02:38+00:00",
+  "passed": true,
+  "check_count": 22,
+  "checks": {
+    "actual_sandbox_mode": true,
+    "original_capture_refunded": true,
+    "refund_completed": true,
+    "refund_binds_original": true,
+    "full_original_refund": true,
+    "replacement_completed": true,
+    "replacement_seventy_cents": true,
+    "same_usd_currency": true,
+    "distinct_payment_resources": true,
+    "sandbox_observation_sources": true,
+    "corrected_destination": true,
+    "corrected_items": true,
+    "warehouse_release_and_payment_binding": true,
+    "merchant_approved_exact_snapshot": true,
+    "payment_event_order": true,
+    "event_chain_recomputed": true,
+    "seven_model_facts": true,
+    "sensitive_values_outside_model_context": true,
+    "actual_bedrock_provenance": true,
+    "model_request_hash_recomputed": true,
+    "failure_simulation_stale": true,
+    "failure_no_payment_dispatch": true
+  },
+  "payment_source": "Actual PayPal Sandbox read-backs retained in private normalized evidence",
+  "model_source": "Actual Bedrock review generated on 10 November before filming on 11 November; request hash recomputed locally",
+  "failure_source": "Separate controlled simulation; no PayPal or Bedrock calls during this verification",
+  "amounts_usd": {
+    "original": "1.00",
+    "replacement": "0.70",
+    "difference": "0.30"
+  },
+  "event_count": 13,
+  "evidence_sha256": "db827b7b782c1624990ac50c6b47f2573805e3e2d89f62bbbd48c3c69e4edd14",
+  "not_claimed": "Production merchant/warehouse integration, atomic payments, legal certification, external attestation or measured business results"
+}

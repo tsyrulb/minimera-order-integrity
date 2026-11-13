@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94 AS ui
+FROM node:26.13.0-bookworm-slim@sha256:add5c17c14752c54d2f3d519ec46a3815684d41c33f198bcb09fb998f7dcbf68 AS ui
 WORKDIR /build/ui
 ENV NODE_OPTIONS=--max-old-space-size=1024
 COPY ui/package.json ui/package-lock.json ./
@@ -10,7 +10,7 @@ RUN --mount=type=secret,id=ag_studio_env,target=/build/ui/.env.local \
     if [ "$WITH_AG_STUDIO_LICENSE" = true ]; then test -s .env.local; else test ! -e .env.local; fi \
     && npm run build
 
-FROM python:3.12-slim@sha256:5e2bdb1b0d542d5039cffb8181c65930093949194a65c365dfb1b0fe13a4fa5b AS app
+FROM python:3.15-slim@sha256:65a65fc7b30b06cb6df4930fd4650697cb23f4c2698ab81fc87e4b031bc36928 AS app
 ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
 WORKDIR /app
 COPY requirements.txt .

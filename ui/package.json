@@ -10,18 +10,18 @@
     "format": "prettier --write src vite.config.ts"
   },
   "dependencies": {
-    "ag-studio": "3.1.0",
-    "ag-studio-react": "3.1.0",
+    "ag-studio": "3.1.1",
+    "ag-studio-react": "3.1.1",
     "react": "19.3.1",
     "react-dom": "19.3.1"
   },
   "devDependencies": {
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
-    "@vitejs/plugin-react": "6.2.1",
-    "axe-core": "4.14.0",
-    "prettier": "3.9.10",
-    "typescript": "~5.9.3",
-    "vite": "8.3.6"
+    "@vitejs/plugin-react": "6.3.0",
+    "axe-core": "4.14.1",
+    "prettier": "3.10.1",
+    "typescript": "~7.0.2",
+    "vite": "8.3.8"
   }
 }

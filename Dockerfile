@@ -1,5 +1,5 @@
 # syntax=docker/dockerfile:1
-FROM node:22.22.0-bookworm-slim@sha256:dd9d21971ec4395903fa6143c2b9267d048ae01ca6d3ea96f16cb30df6187d94 AS ui
+FROM node:26.13.0-bookworm-slim@sha256:add5c17c14752c54d2f3d519ec46a3815684d41c33f198bcb09fb998f7dcbf68 AS ui
 WORKDIR /build/ui
 ENV NODE_OPTIONS=--max-old-space-size=1024
 COPY ui/package.json ui/package-lock.json ./
